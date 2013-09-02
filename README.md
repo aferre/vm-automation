@@ -1,23 +1,24 @@
 vm-automation
 =============
 
-Automate startup and shutdown of vmware virtual machines using vmrun
+Automate startup and shutdown of vmware virtual machines using the vmrun utility.
 
-Install instructions:
+Install
+-------
 
 git clone git://github.com/aferre/vm-automation.git
 cd vm-automation
-sudo ./install.sh
+chmod +x install.sh && sudo ./install.sh
 
 Done!
 
 Configuration
-=============
+-------------
 
-TO modify the directory where the virtual machines are stored, use the VMS_DIR variable in vm-automation.sh.
+To modify the directory where the virtual machines are stored, use the VMS_DIR variable in vm-automation.sh.
 
 Usage
-=====
+-----
 
 vm-automation startAll/stopAll
 
@@ -27,6 +28,6 @@ vm-automation start/stop Jenkins
 
 Will start/stop Jenkins.vmx virtual machine located in VMS_DIR
 
-vm-automation start/stop /<Some_path>/Jenkins.vmx
+vm-automation start/stop /< Some_path >/Jenkins.vmx
 
-Will start/stop /<Some_path>/Jenkins.vmx virtual machine
+Will start/stop /< Some_path >/Jenkins.vmx virtual machine
